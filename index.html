@@ -408,7 +408,7 @@
           <h2 id="next-burn-h">The next burn</h2>
           <span class="tag">Monthly cycle</span>
         </div>
-        <p class="sec-sub">The Community BuyBack runs every month, and recent rounds have opened around the 21st — the October round opened on 21 Oct 2026. Injective hasn't announced the November date yet, so this counts down to the expected window, not a confirmed start time.</p>
+        <p class="sec-sub">The Community BuyBack runs every 28 days. Round #235 opened on 21 Oct 2026, so Round #236 is scheduled for 18 Nov 2026, followed by Round #237 on 16 Dec 2026. This counts down to that scheduled date.</p>
         <div class="countdown-grid">
           <div class="panel cd-box">
             <div class="lbl" style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)">Expected November window opens in</div>
@@ -418,11 +418,12 @@
               <div class="cd-unit"><div class="n mono" id="cdM">–</div><div class="l">Mins</div></div>
               <div class="cd-unit"><div class="n mono" id="cdS">–</div><div class="l">Secs</div></div>
             </div>
-            <p class="cd-note">Window target: <b class="mono">21 Nov 2026, 00:00 UTC</b> · based on recent rounds opening around the 21st (October round: 21 Oct). November date not yet announced by Injective.</p>
+            <p class="cd-note">Window target: <b class="mono">18 Nov 2026, 00:00 UTC</b> · Round #236 · Rounds occur every 28 days (#235: 21 Oct 2026, #237: 16 Dec 2026).</p>
           </div>
           <div class="panel last-burn">
             <div class="lbl">Last completed round · October 2026</div>
             <div class="big">≈7.3M INJ total</div>
+            <p><b>Next round: #236 — 18 Nov 2026</b> · then #237 on 16 Dec 2026.</p>
             <p>The October round opened <b>21 Oct 2026</b> with a revenue basket worth <b>$247,000+</b> (up to $251,000 in Injective's recap) and completed in late October. The exact INJ burned in that round hasn't been published in the sources checked — reporting after it puts the cumulative total at <b>≈7.3M INJ</b>. The round before it, No. 234, burned <b>29,245.99 INJ</b> on 30 Sep 2026.</p>
           </div>
         </div>
@@ -641,7 +642,7 @@ That's why IIP-617 matters: it doubles the deflation rate. The race to watch is 
         <div class="cols">
           <div>
             <h4>About this snapshot</h4>
-            <p>Burn Watch is a community-built tracker, not an Injective team product and not financial advice. Figures are baked in from the sources below at build time — this page does not fetch live chain data or live prices, so check the date before quoting a number. Snapshot built <b>7 November 2026</b>; burn tally as reported <b>22 October 2026</b>; $INJ price snapshot <b>7 November 2026</b> ($8.29); $INJC last close <b>6 November 2026</b> ($26.90, +2.87%).</p>
+            <p>Burn Watch is a community-built tracker, not an Injective team product and not financial advice. Figures are baked in from the sources below at build time — this page does not fetch live chain data or live prices, so check the date before quoting a number. Snapshot built <b>7 November 2026</b>, schedule updated <b>8 November 2026</b>; burn tally as reported <b>22 October 2026</b>; $INJ price snapshot <b>7 November 2026</b> ($8.29); $INJC last close <b>6 November 2026</b> ($26.90, +2.87%).</p>
             <p class="built-by">Built by <b>Hassan (<a href="https://x.com/hassann_web3" target="_blank" rel="noopener">@hassann_web3</a>)</b> for the Injective community 🥷</p>
           </div>
           <div>
@@ -686,8 +687,8 @@ That's why IIP-617 matters: it doubles the deflation rate. The race to watch is 
           setTimeout(function () { segEl.style.width = pct + "%"; }, 150);
         }
 
-        /* ---- Countdown to expected November window: 21 Nov 2026 00:00 UTC ---- */
-        var target = Date.UTC(2026, 10, 21, 0, 0, 0);
+        /* ---- Countdown to Round #236: 18 Nov 2026 00:00 UTC ---- */
+        var target = Date.UTC(2026, 10, 18, 0, 0, 0);
         var cdD = document.getElementById("cdD"), cdH = document.getElementById("cdH"),
             cdM = document.getElementById("cdM"), cdS = document.getElementById("cdS");
         function pad(n) { return (n < 10 ? "0" : "") + n; }
